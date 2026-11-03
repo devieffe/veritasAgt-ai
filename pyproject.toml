@@ -1,0 +1,34 @@
+[project]
+name = "veritasagent"
+version = "0.1.0"
+description = "Evidence-aware analysis of written conversations"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2.10,<3",
+    "whileai>=0.131",
+]
+
+[project.optional-dependencies]
+providers = [
+    "openai>=1.65",
+    "anthropic>=0.48",
+]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+veritasagent = "app.main:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"

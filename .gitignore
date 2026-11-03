@@ -1,0 +1,64 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyd
+.Python
+
+# C extensions
+*.so
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+venv/
+.env/
+
+# uv
+.uv-cache/
+
+# transformers.js (local model cache)
+.transformers-cache/
+
+# Typecheck / lint / test caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.tox/
+.nox/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Environment files (keep .env.example tracked)
+.env
+.env.*
+!.env.example
+
+# Node / web
+node_modules/
+web/node_modules/
+web/dist/
+web/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+
+# Local scratch
+.tmp/
